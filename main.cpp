@@ -1,6 +1,8 @@
 
 #include <stdio.h>
+#include <iostream>
 
+using namespace std;
 int factorial(int n)
 {
     int i, //variable local//
@@ -26,7 +28,13 @@ int main(void)
         printf("El factorial de %d es %d\n", num, fact);
 
     }
-
+    int N;
+    cout << "Ingrese un numero entero positivo: " << endl;
+    cin >> N;
+    cout << endl;
+    for (int i = 1; i <= 10; i++) {
+        cout << N << " x " << i << " = " << N * i << endl;
+    }
     return (0);
 
 
